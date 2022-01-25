@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: beige;
+}
+h1{
+    color: #00FF7F;
+    text-align: center;
+}
+p{
+    color: deepskyblue;
+}
+/*dar estilo cin id s3 considera un antipatron*/
+#parrafo-dos{
+    background-color: midnightblue;
+    font-size: 12pt;
+}
+.text-32
+{
+    font-size:32px;
+}
+.text-20
+{
+    font-size: 20px;
+}
+.bg-steelblue
+{
+    background-color: steelblue;
+}
+/*.bg-skyblue
+{
+    background-color: skyblue;
+}*/
+.text-white
+{
+    color: white;
+}
+
+.hijos-directos>li{
+    background-color: thistle;
+}
+.hijos-descendientes b{
+    background-color: thistle;
+}
+.hermanos-general~li{
+    background-color: thistle;
+}
+.hermanos-adyacentes+li{
+    background-color: thistle;
+}
+.selectores-atributos a[href]{
+    color:indianred;
+}
+.selectores-atributos a[href="https://google.com"]{
+    background-color: yellowgreen;
+}
+.selectores-atributos a[href*="com"]{
+    font-weight: bold;
+    font-size: 30px;
+}
+.selectores-atributos a[href^="http:"]{
+    color: blueviolet;
+}
+.selectores-atributos a[href$="html"]{
+    text-decoration: none;
+}
+.selectores-atributos a[class~="cursos"]{
+    background-color: black;
+}
+.selectores-atributos a[class|="cursos"]{
+    background-color: white;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    font-family: sans-serif;
+}
+.selector-universal *{
+    font-size: 36px;
+}
+.form-pseudoclase *:required{
+    border-color: olivedrab;
+}
+.form-pseudoclase *:valid{
+    border-color: greenyellow;
+}
+.form-pseudoclase *:invalid{
+    border-color: red;
+}
+.form-pseudoclase *:focus{
+    background-color: skyblue;
+}
+.form-pseudoclase *:disabled{
+    background-color: pink;
+}
+.menu-pseudoclase a:hover{
+    background-color: orange;
+}
+.menu-pseudoclase a:visited{
+    color: olivedrab;
+}
+.p-pseudoclase :hover{
+    background-color: yellow;
+}
+#temario-curso:target{
+    background-color: lightpink;
+}
+.lista-pseudoclase li:first-child{
+    color: green;
+}
+.lista-pseudoclase li:last-child{
+    color: red;
+}
+.lista-pseudoclase li:nth-child(3){
+    color: cyan;
+}
+.lista-pseudoclase li:nth-child(4n){
+    font-weight: bold;
+}
+.lista-pseudoclase li:nth-child(4n +1){
+    font-style: italic;
+}
+.lista-pseudoclase li:nth-child(odd){
+    background-color: lightpink;
+}
+.lista-pseudoclase li:nth-child(even){
+    background-color: lightcyan;
+}
+.articulo-pseudoclase p:first-of-type{
+    background-color: pink;
+}
+.articulo-pseudoclase p:last-of-type{
+    background-color: brown;
+}
+.articulo-pseudoclase p:nth-of-type(3){
+    background-color:darkcyan;
+}
+.articulo-pseudoclase *:not(p){
+    background-color:black;
+    color: white;
+}
