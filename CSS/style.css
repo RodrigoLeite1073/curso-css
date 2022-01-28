@@ -140,3 +140,33 @@ p{
     background-color:black;
     color: white;
 }
+.saga-geminis::before{
+    content: " 🤼 ";
+}
+.saga-geminis::after{
+    content: " ♊ ";
+}
+.saga-precio::before{
+    content: "$";
+}
+.saga-precio::after{
+    content: ".00";
+}
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+    font-family: fantasy;
+    color: royalblue;
+}
+.p-pseudoelementos::first-line{
+    color: coral;
+}
+.p-pseudoelementos::selection{
+    background-color: pink;
+    color: black;
+}
+.input-pseudoelementos::placeholder{
+    color: green;
+    font-style: italic;
+    font-weight: 800; 
+}
