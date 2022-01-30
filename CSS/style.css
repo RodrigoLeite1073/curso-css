@@ -179,10 +179,13 @@ p{
     display: block;
     color:lime;
     font-weight:800;
+<<<<<<< HEAD
     width: 300px;
     border-width:2px;
     margin: 3px;
     border-style: dashed;
+=======
+>>>>>>> 5c7abba (selectores multiples)
 }
 .form-agrupar-selectores *::placeholder{
     color:lime;
