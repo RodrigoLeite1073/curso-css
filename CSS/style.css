@@ -179,6 +179,10 @@ p{
     display: block;
     color:lime;
     font-weight:800;
+    width: 300px;
+    border-width:2px;
+    margin: 3px;
+    border-style: dashed;
 }
 .form-agrupar-selectores *::placeholder{
     color:lime;
