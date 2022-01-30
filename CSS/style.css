@@ -170,3 +170,17 @@ p{
     font-style: italic;
     font-weight: 800; 
 }
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type='email'],
+.form-agrupar-selectores input[type='submit'],
+.form-agrupar-selectores textarea{
+    border-color: yellowgreen; 
+    background-color: black;
+    display: block;
+    color:lime;
+    font-weight:800;
+}
+.form-agrupar-selectores *::placeholder{
+    color:lime;
+    font-weight: 800;
+}
