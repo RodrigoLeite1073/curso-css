@@ -1,8 +1,38 @@
+body{
+    margin:0px;
+}
 h1{
-    border-style: solid;
-    border-width: 4px;
-    border-color: red;
-    margin: 10ox;
-    padding: 10px;
-    background-color: limegreen;
+    width:400px;
+    height:200px;
+    border-style: groove;
+    border-width: 8px 16px 32px 40px;
+    border-color: red blue green pink;
+    border: 12px double lightcyan;
+}
+/*
+Esto aplica para margin y padding
+1 valor = aplicar a los 4 lados
+2 valores =
+primer valor es para los lados verticales (t/b)
+segundo valor es para los lados horizontales (l/r)
+3 valores =
+primer valor es para top
+segundo valor es para los lados horizontales (l/r)
+tercer valor es para bottom
+4 valores = Piensa en las manecillas del reloj
+primer valor es para top (12)
+segundo valor es para right (3)
+tercer valor es para bottom (6)
+cuarto valor es para left (9)
+*/
+.caja-uno,
+.caja-dos{
+    background-color: chocolate;
+    border: medium solid orange;
+    padding: 20px;
+    margin: 20px;
+    padding: 15px 30px;
+    margin: 40px 20px;
+    padding: 0 40px 20px;
+    margin: 50px 30px 0;
 }
