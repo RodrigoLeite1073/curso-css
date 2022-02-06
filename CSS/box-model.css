@@ -74,39 +74,91 @@ cuarto valor es para left (9)
  *flex - ve mi curso de Flexbox CSS
  *grid - ve mi curso de Grid CSS
  **/
-    .caja-none,
-    .caja-hidden,
-    .caja-linea-bloque{
-        background-color:darkolivegreen;
-        color:white;
-        width:600px;
-        height:300px;
-        border:thin solid black;
-    }
-    .caja-linea-bloque{
-        display: inline-block;
-    }
-    .caja-none{
-        display:none;
-    }
-    .caja-hidden{
-        visibility:hidden;
-    }
-    .overflow{
-        color:white;
-        background-color: blueviolet;
-        width:200px;
-        height:100px;
-        overflow: visible;
-        overflow: hidden;
-        overflow: scroll;
-        overflow: auto;
-    }
-    .box-sizing-content{
-        background-color: deepskyblue;
-        box-sizing:content-box;
-        width:500px;
-        height:250px;
-        padding:10px;
-        border: thick solid black;
-    }
+.caja-none,
+.caja-hidden,
+.caja-linea-bloque{
+    background-color:darkolivegreen;
+    color:white;
+    width:600px;
+    height:300px;
+    border:thin solid black;
+}
+.caja-linea-bloque{
+    display: inline-block;
+}
+.caja-none{
+    display:none;
+}
+.caja-hidden{
+    visibility:hidden;
+}
+.overflow{
+    color:white;
+    background-color: blueviolet;
+    width:200px;
+    height:100px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
+.box-sizing-border,
+.box-sizing-content{
+    background-color: deepskyblue;
+    box-sizing:content-box;
+    width:500px;
+    height:250px;
+    padding:10px;
+    border: thick solid black;
+}
+
+.box-sizing-border{
+    box-sizing: border-box;
+}
+.container-col-3{
+    background-color: burlywood;
+    margin-top:20px;
+    width:600px;
+    height:300px;
+}
+.container-col-3>*{
+    box-sizing: border-box;
+    float:left;
+    width:200px;
+    padding:10px;
+    border: thin solid indianred
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container-float{
+    background-color: cornflowerblue;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+
+.clear-fix{
+    clear: both;
+}
+.margin-collapse{
+    background-color: deepskyblue;
+}
+.margin-collapse section{
+    border:thin double coral;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.margin-collapse span{
+    border:thin double coral;
+    display: inline-block;
+    margin-right: 16px;
+    margin-left: 16px;
+}
