@@ -162,3 +162,11 @@ html {
     margin-right: 16px;
     margin-left: 16px;
 }
+.sitio-web{
+    border: thin solid black;
+    background-color:thistle;
+    width: 800px;
+    height: 1000px;
+    padding: 16px;
+    margin: 200px auto 0;
+}
