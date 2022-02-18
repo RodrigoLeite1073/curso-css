@@ -46,4 +46,42 @@ html{
     border: thick solid hsl(130, 100%, 85%);
     font-size: 2em;
     margin: 0.5em;
+    padding: 1em;
 }
+.rems{
+    background-color: hsl(140, 90%, 80%);
+    color:hsl(340, 100%, 30%);
+    font-size: 24px;
+    padding: 1rem 0.5rem;
+    border:0.75rem solid hsl(350, 100%, 80%);
+}
+.rems__child{
+    background-color: hsl(180,100%, 50%);
+    border: thick solid hsl(200, 80%, 55%);
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.exs{
+    background-color: hsl(0, 00%, 80%);
+    color:hsl(0, 0%, 0%);
+    font-size: 24px;
+    padding: 1ex 0.5ex;
+    border:0.75ex solid hsl(0, 0%, 35%);
+}
+.exs__child{
+    background-color: hsl(0,0%, 50%);
+    border: thick solid hsl(0, 0%, 100%);
+    font-size: 2ex;
+    margin: 0.5ex;
+    padding: 1ex;
+}
+.chs{
+    background-color: #9EE6B6;
+    color:#CA865B;
+    width: 10ch;
+}
+/*#9EE6B6*/
+/*#70E99E*/
+/*#14EB85*/
+/*#CA865B*/
