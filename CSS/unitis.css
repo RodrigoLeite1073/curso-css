@@ -85,3 +85,26 @@ html{
 /*#70E99E*/
 /*#14EB85*/
 /*#CA865B*/
+
+.percentages{
+    background-color: #a9c8e1;
+    padding: 5%;
+    margin: 20% 10%;
+    width: 80%;
+    height: 100%;
+    font-size: 200%;
+}
+.height{
+    background-color:#F18FB6 ;
+    width: 500px;
+    height: 500px;
+}
+.height__child{
+    background-color:#3A5C7F ;
+    width: 50%;
+    height: 50%;
+}
+/*#F2FEFC*/
+/*#A9C8E1*/
+/*#3A5C7F*/
+/*#F18FB6*/
