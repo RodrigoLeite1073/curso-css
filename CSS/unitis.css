@@ -25,6 +25,8 @@ html{
 *::after,
 *::before{
     box-sizing: inherit;
+    margin:0;
+    padding: 0;
 }
 .pixels{
     background-color: cadetblue;
@@ -108,3 +110,25 @@ html{
 /*#A9C8E1*/
 /*#3A5C7F*/
 /*#F18FB6*/
+.viewport{
+    background-color:#F2FEFC;
+    width: 50vw;
+      /* Recuerda que la etiqueta body tiene margenes por defecto y recuerda que las barras de scroll del navegador también forman parte del viewport */
+    width: 100vw;
+    height: 50vh;
+    height: 100vh;
+    border: thick solid #3A5C7F;
+    font-size: 3vw;
+    padding: 2vh 2vw;
+    margin: 2vh 2vw;
+}
+.vmax{
+    background-color: #3A5C7F;
+    width: 50vmax;
+    height: 50vmax;
+}
+.vmin{
+    background-color: #F18FB6;
+    width: 50vmin;
+    height: 50vmin;
+}
