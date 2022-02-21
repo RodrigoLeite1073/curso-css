@@ -1,0 +1,92 @@
+body{
+    background-color:#91EAC8;
+    color: hsl(240, 50%, 20%);
+}
+.colors-by-name{
+    background-color: coral;
+    color: darkblue;
+    border: 10px solid red;
+}
+/* 
+Sistema Hexadecimal
+0123456789ABCDEF
+RedGreenBlue (Medios Digitales) vs CyanMagentaYellowKey (Medios Impresos)
+Colores en HEX va a ser colores de 6 dígitos
+#ff00ff
+*/
+.colors-hex{
+    background-color: #ff6600;
+    background-color: #f60;
+    background-color: #ff660099;
+    color: #00a;
+    border: 10px solid #f00;
+}
+/* 
+Sistema RGB
+  Acepta 8 bits por canal de color
+  Bit (0/1) 2 elevado a la potencia 8 = 2*2*2*2*2*2*2*2 = 256 
+  Por cada canal de color tenemos valores que van del 0 al 255
+*/
+.colors-rgb{
+    background-color: #f60;
+    background-color: rgb(255,106,00);
+    background-color: rgba(255,106,0,0.5);
+    color: #00a;
+    color: rgb(0, 0, 160);
+    border: 10px solid #f00;
+    border: 10px solid rgb(255,0,0);
+}
+/* 
+Sistema HSL
+HueSaturationLightness (Tono-Saturación-Luminosidad)
+El primer es Hue (Círculo Cromático)
+  0° -> red
+  60° -> yellow
+  120° -> green
+  180° -> cyan
+  240° -> blue
+  300° -> magenta
+El segundo valor es Saturation (Intensidad del Color)
+  0% -> Escala de grises
+  100% -> Color puro
+El tercer v'alor es Lightness (Luminosidad del Color)
+  0% -> black
+  50% -> color puro
+  100% -> white
+*/
+.colors-hsl{
+    background-color: #ff6600;
+    background-color: hsl(20, 100%, 60%);
+    background-color: hsla(20, 100%, 60%,0.5);
+    color: #00a;
+    color: hsl(210, 50%, 40%);
+    color: hsl(240, 100%, 35%);
+    border: 10px solid #f00;
+    border: 10px solid hsl(0, 100%, 50%);
+}
+/* 
+Valor transparent: color transparente es igual a aplicar rgba(0,0,0,0)
+Valor currentColor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro más cercano al más alejado
+*/
+.colors-transparent-current{
+    background-color: darkmagenta;
+    background-color: currentColor;
+    background-color: transparent;
+    border: thick solid currentColor;
+}
+.opacity-property{
+    background-color: cornsilk;
+    color: brown;
+    border:thick dotted brown;
+    padding: 16px;
+    opacity: 0.5;
+}
+.opacity-00{
+    opacity: 0;
+}
+.opacity-50{
+    opacity: 0.5;
+}
+.opacity-100{
+    opacity: 1;
+}
