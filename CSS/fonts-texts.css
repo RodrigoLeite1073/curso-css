@@ -1,3 +1,8 @@
+:root{
+--color-1:#6C31EB;
+--color-2:#B9F538;
+--color-3:#FF9F80;
+}
 html{
     box-sizing: border-box;
 }
@@ -6,3 +11,52 @@ html{
 *::before{
     box-sizing: border-box;
 }
+body{
+    background-color: var(--color-2);
+}
+.font-color{
+    color:var(--color-1);
+}
+p{
+    border:thick solid var(--color-3);
+}
+.font{
+    /*fuentes por defecto*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 2;
+    /*font-style font-variant font-weight font-size line-height and font-family*/
+    /*font:italic normal normal 32px / 1 monospace;*/
+    font:40px monospace;
+}
+/* 
+Formato woff o woff2 - Web Open Font Format
+font-display:
+  auto - permite que el navegador utilice el método predeterminado que suele ser block
+  block - oculta brevemente el texto hasta que la fuente haya sido descargada por completo
+  swap - indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo
+  fallback - es una mezcla de auto y swap
+  optional -ocultará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada
+*/
+@font-face{
+    font-family: "Chalet";
+    src: url(../assets/Chalet.woff) format("woff");
+    font-display: swap;
+}
+    .chalet{
+        font-family: "Chalet", Arial;
+        font-size: 2rem;
+    }
+    @font-face{
+        font-family: "Pecita";
+        src: url(../assets/Pecita.woff);
+        font-display: swap;
+    }
+    .pecita{
+        font-family: "Pecita", cursive;
+        font-size: 2rem;
+    }
