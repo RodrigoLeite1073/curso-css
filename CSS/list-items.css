@@ -1,0 +1,35 @@
+html{
+    box-sizing:border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+:root{
+    --dtail:#6C31EB;
+    --card:#B9F538;
+    --bg:#FF9F80;
+    --black:#000;
+    --white:#fff:
+}
+body{
+    background-color: var(--bg);
+}
+h1{
+    color: var(--dtail);
+    font-size: 4rem;
+    text-align: center;
+}
+.texto{
+    color:var(--dtail);
+}
+.icon{
+    font-size: 3rem;
+    color:var(--dtail);
+}
+.list{
+    color:var(--dtail);
+    font-size: 2rem;
+    list-style-type: square;
+}

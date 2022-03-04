@@ -1,0 +1,51 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+:root{
+    --negro:#000000;
+    --letra:#463F51;
+    --sombra:#598BAF;
+    --detalle:#5AE4EA;
+    --fondo:#CAE4E6;
+}
+body{
+    background-color: var(--fondo);
+}
+h1{
+    color: var(--detalle);
+    text-align: center;
+    font-size: 5rem;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    color: var(--letra);
+    font-size: 2rem;
+}
+.texto{
+    color: var(--sombra);
+}
+.card{
+    border: medium solid var(--sombra);
+    background-color: var(--detalle);
+    width: 400px;
+    height: 450px;
+}
+.card img{
+    background-color: var(--sombra);
+    height: 300px;
+    object-fit: fill;
+    object-fit: cover;
+    object-fit: contain;
+    object-fit: none;
+    object-fit: scale-down;/*toma el menor valor entre contain y none*/
+    object-position: left center;
+    object-position: 50% 50%;
+    object-position: top right ;
+}
