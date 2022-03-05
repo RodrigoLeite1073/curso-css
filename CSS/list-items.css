@@ -15,6 +15,7 @@ html{
 }
 body{
     background-color: var(--bg);
+    color: var(--dtail);
 }
 h1{
     color: var(--dtail);
@@ -29,7 +30,38 @@ h1{
     color:var(--dtail);
 }
 .list{
-    color:var(--dtail);
     font-size: 2rem;
     list-style-type: square;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+    list-style-type: decimal-leading-zero;
+    list-style-type: lower-greek;
+    list-style-type: none;
+    list-style-image: url("../assets/aves.png");
+    list-style-image: none;
+}
+.list-2 li::before,
+.list li::before{
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("../assets/favicon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.list-2{
+   list-style-position: inside;
+   list-style-type: none;
+}
+.list-3{
+    list-style: lower-greek inside ;
+}
+.text-column-4{
+    list-style-position: inside;
+    column-count: 4;
+    column-gap: 2rem;
+    column-rule: medium dashed var(--card);
+    column-width: 100px;
 }
