@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+:root{
+    --bg:#260D05;
+    --card:#780906;
+    --title:#FFDC99;
+    --detail:#A89556;
+    --text:#EDC474;
+    --success:#88BB6E;
+    --error:#BB4343;
+}
+body{
+    background-color: var(--bg);
+    color:var(--text);
+    font-family: sans-serif;
+}
+h1{
+    color:var(--title);
+    text-align: center;
+    font-size: 4rem;
+}
+.icon{
+    color:var(--title);
+    font-size: 3rem;
+}
+.contact-form{
+    background-color: var(--card);
+    border: thick solid var(--detail);
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.contact-form > *{
+    display:block;
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: var(--detail);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--card);
+}
+.contact-form > *::placeholder{
+    color: var(--card);
+    font-family: sans-serif;
+}
+.contact-form > *[required]:invalid{
+    border:medium solid var(--error);
+}
+.contact-form > *[required]:valid{
+    border:medium solid var(--success);
+}
+.contact-form > *[required]:focus{
+    border:medium solid var(--detail);
+}
+.contact-form [type=submit]{
+    width: 30%;
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--card);
+    font-size: 1.5rem;
+} 
+.contact-form [type=submit]{
+    cursor: pointer;
+    opacity: 0.75;
+}
+.contact-form textarea{
+    resize: none;
+}
