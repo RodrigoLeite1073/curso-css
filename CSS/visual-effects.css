@@ -21,6 +21,8 @@ body{
 }
 .title{
     color:var(--title);
+    text-align: center;
+    font-size: 3rem;
 }
 h1{
     background-color: var(--detail);
@@ -29,6 +31,9 @@ h1{
     width: 80%;
     margin: 0 auto;
     padding: 2rem;
+}
+h3{
+    text-align: center;
 }
 hr{
     border:medium solid var(--detail);
@@ -68,5 +73,27 @@ hr{
 .drop-shadow img{
     max-width: 100%;
     /*box-shadow: 1rem 1rem 1rem 1rem var(--title);*/
-    filter: drop-shadow(1rem 1rem 1rem #f00);
+    filter: drop-shadow(1rem 1rem 0.1rem #efa9ae)
+    drop-shadow(1rem 1rem 1rem #ef23ae);
+}
+.linear-gradient{
+    background-image:linear-gradient(0deg, red,green,blue);
+    background-image:linear-gradient(20deg, red,green,blue);
+    background-image:linear-gradient(to right, red,green,blue);
+    background-image:linear-gradient(to top left, red,green,blue);
+    background-image:linear-gradient(to left, red 20%,green 40% 60%,blue 80%);
+}
+.radial-gradient{
+    background-image: radial-gradient(cyan, yellow, magenta);
+    background-image: radial-gradient(circle 100px,cyan, yellow 50%, magenta);
+    background-image: radial-gradient(circle 100px at top left,cyan, yellow 50%, magenta);
+    background-image: radial-gradient(ellipse 100px 60px,cyan, yellow 50%, magenta);
+    background-image: radial-gradient(circle 100px at 30px 30px,cyan, yellow 50%, magenta);
+}
+.conic-gradient{
+    background-image: conic-gradient(blue 5%,red 45%, green 75%, blue 95%);
+    background-image: conic-gradient(blue 30deg,red 70deg 120deg, green 180deg 220deg, blue 345deg);
+    background-image: conic-gradient(blue 30deg,red 90deg 150deg, green 210deg 270deg, blue 330deg);
+    background-image: conic-gradient(blue 30deg, white 30deg 90deg,red 90deg 150deg, white 150deg 220deg, green 210deg 270deg,white 270deg 330deg, blue 330deg);
+    background-image: conic-gradient(from 90deg at 30px 60px,blue 5%,red 45%, green 75%, blue 95%);
 }
