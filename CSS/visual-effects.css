@@ -115,3 +115,44 @@ background-image:radial-gradient(#190b28 40%,#efa9ae 40% 43%, transparent 43%),
 conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
     border-radius: 50%;
 }
+.card{
+    border: thick solid var(--text);
+    background-color: var(--card);
+    width: 600px;
+    height: 400px;
+    margin: 0  auto 3rem;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:left;
+}
+.filter{
+    /*filter:blur(1rem);*/
+    /*filter:blur(.25rem);*/
+    /*filter:brightness(2);*/
+    /*filter:brightness(.8);*/
+    /*filter:contrast(.5);*/
+    /*filter:contrast(2);*/
+    /*filter:grayscale(0.5);*/
+    /*filter:grayscale(1);*/
+    /*filter:grayscale(2);*/
+    /*filter:sepia(0.5);*/
+    /*filter:sepia(1);*/
+    /*filter:sepia(2);*/
+    /*filter:hue-rotate(45deg);*/
+    /*filter:hue-rotate(180deg);*/
+    /*filter: invert(0.5);*/
+    /*filter: invert(1);*/
+    /*filter:opacity(0.5);*/
+    /*filter:opacity(1);*/
+    /*filter:opacity(0.10);*/
+    /*filter: saturate(0.5);*/
+    /*filter: saturate(0);*/
+    /*filter: saturate(4);*/
+    filter: invert(1);
+}
+.filters-multiple{
+   filter:blur(0.2rem) hue-rotate(180deg) invert(1);
+}
