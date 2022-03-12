@@ -156,3 +156,37 @@ conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
 .filters-multiple{
    filter:blur(0.2rem) hue-rotate(180deg) invert(1);
 }
+.relative{
+    position: relative;
+}
+.backdrop-filter,
+.backdrop-filter-multiple{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backdrop-filter h4{
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+    /*background-color:#e5538180;*/
+    color: var(--bg);
+    backdrop-filter: grayscale(1);
+    backdrop-filter: blur(2rem);
+    backdrop-filter: hue-rotate(180deg);
+    backdrop-filter: blur(2rem);
+}
+.backdrop-filter-multiple h4{
+    border-radius: 1rem;
+    padding: 4rem;
+    font-size: 3rem;
+    border: medium solid #ffffff80;
+    background:linear-gradient(45deg,transparent,  #ffffffee 20%,transparent 80%,  #fffffffe);
+    color: var(--bg);
+    backdrop-filter:blur(.25rem);
+}
