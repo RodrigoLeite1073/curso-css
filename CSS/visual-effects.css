@@ -106,3 +106,12 @@ hr{
 .repeat-gradient-conic{
     background-image: repeating-conic-gradient(at 150px 170px, red 0deg 10deg, green 10deg 20deg, blue 20deg 30deg);
 }
+.chart-gradient{
+    background-image: conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
+    border-radius: 50%;
+}
+.donnut-gradient{
+background-image:radial-gradient(#190b28 40%,#efa9ae 40% 43%, transparent 43%),
+conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
+    border-radius: 50%;
+}
