@@ -188,5 +188,29 @@ conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
     border: medium solid #ffffff80;
     background:linear-gradient(45deg,transparent,  #ffffffee 20%,transparent 80%,  #fffffffe);
     color: var(--bg);
+    backdrop-filter:blur(.25rem) hue-rotate(200deg);
+}
+.imagen{
+    background-image: url(../assets/BuenosDias.jpg);
+    background-size: cover;
+    background-position: top left;
+}
+.backdrop-filter-imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backdrop-filter-imagen h4{
+    border-radius: 1rem;
+    padding: 4rem;
+    font-size: 3rem;
+    border: thick solid #ffffff80;
+    background:linear-gradient(45deg,transparent,  #ffffffee 20%,transparent 80%,  #fffffffe);
+    color: var(--bg);
     backdrop-filter:blur(.25rem);
 }
