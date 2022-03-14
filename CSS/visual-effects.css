@@ -159,6 +159,11 @@ conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
 .relative{
     position: relative;
 }
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .backdrop-filter,
 .backdrop-filter-multiple{
     position: absolute;
@@ -213,4 +218,28 @@ conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
     background:linear-gradient(45deg,transparent,  #ffffffee 20%,transparent 80%,  #fffffffe);
     color: var(--bg);
     backdrop-filter:blur(.25rem);
+}
+.blend-mode{
+    /*mix-blend-mode: normal;*/
+    /*mix-blend-mode: color;*/
+    /*mix-blend-mode:hue;*/
+    /*mix-blend-mode:screen;*/
+    /*mix-blend-mode:darken;*/
+    /*mix-blend-mode:overlay;*/
+    /*mix-blend-mode:color-dodge;*/
+    /*mix-blend-mode:color-burn;*/
+    /*mix-blend-mode:multiply;*/
+    /*mix-blend-mode:luminosity;*/
+    /*mix-blend-mode:exclusion;*/
+    /*mix-blend-mode:difference;*/
+    /*mix-blend-mode:hard-light;*/
+    /*mix-blend-mode:soft-light;*/
+    /*mix-blend-mode:lighten;*/
+    /*mix-blend-mode:overlay;*/
+    mix-blend-mode:darken;
+}
+.bg-blend-mode{
+    background-image: url(../assets/puesta-sol.jpg), url(../assets/BuenosDias.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
 }
