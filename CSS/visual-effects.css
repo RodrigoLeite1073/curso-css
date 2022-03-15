@@ -243,3 +243,55 @@ conic-gradient(cyan 40%, magenta 40% 80%, yellow 80%);
     background-size: cover;
     background-blend-mode: darken;
 }
+.clip-path{
+    /*clip-path: circle();
+    clip-path: circle(2rem);
+    clip-path: circle(150px);
+    clip-path: circle(150px at top);
+    clip-path: circle(150px at top left);
+    clip-path: circle(150px at top left);
+    clip-path: circle(150px at 20% 70%);
+    clip-path: circle(150px at 180px 200px);
+    clip-path: ellipse();
+    clip-path: ellipse(200px 150px);
+    clip-path: ellipse(60% 30%);
+    clip-path: ellipse(100px 150px);
+    clip-path: ellipse(100px 150px at left top);
+    clip-path: inset(2rem);
+    clip-path: inset(4rem 2rem);
+    clip-path: inset(4rem 2rem 10rem);
+    clip-path: inset(4rem 2rem 10rem 7rem);
+    clip-path: inset(2rem round 3rem);
+    clip-path: inset(2rem round 1rem 0 8rem 3rem);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);*/
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+.shapes{
+    border: thick solid var(--card);
+    padding: 1rem;
+    margin: 0 auto 5rem;
+}
+.shapes img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.shape-1{
+    margin:4rem 2rem 4rem 0;
+    shape-outside: circle();
+}
+.shape-2{
+    margin: 4rem 0 4rem 2rem;
+    shape-outside: ellipse();
+}
+.shape-3{
+    margin: 2rem 6rem 0 0;
+    shape-outside: polygon(2% 4%, 46% 4%, 75% 14%, 89% 31%, 78% 56%, 51% 62%, 99% 99%, 0% 100%);
+}
