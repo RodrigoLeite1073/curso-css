@@ -23,13 +23,18 @@ body {
 }
 header {
     width: 100%;
-    padding: 0.3rem;
+    padding: 0.1rem;
     background-color: var(--primary);
 }
-h1 {
+h1,
+h2{
     color: var(--title);
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+}
+.pos-sticky{
+    position: sticky;
+    top: 0;
 }
 .box {
     border: thick solid var(--text);
