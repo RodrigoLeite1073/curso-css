@@ -31,10 +31,6 @@ h1 {
     font-size: 3rem;
     text-align: center;
 }
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
 .box {
     border: thick solid var(--text);
     width: 200px;
