@@ -27,12 +27,15 @@ header {
     background-color: var(--primary);
 }
 h1,
-h2{
+h2 {
     color: var(--title);
     font-size: 2rem;
     text-align: center;
 }
-.pos-sticky{
+h3 {
+    text-align: center;
+}
+.pos-sticky {
     position: sticky;
     top: 0;
 }
@@ -64,34 +67,51 @@ Transiciones
   transition: property duration timing-funciton delay
   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
 */
-.transition .box{
+.transition .box {
     background-color: var(--card);
-  transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
-  transition-delay:.5s;
-  transition: .5s ease-in-out;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 0.5s;
+    transition: 0.5s ease-in-out;
 }
-.transition .box:hover{
+.transition .box:hover {
     background-color: var(--primary);
     border-color: var(--primary);
     border-radius: 2rem;
 }
-.transition .card{
-    transition: opacity 1s ease-out,
-    border-color 2s steps(3),
-    filter 1s 2s,
-    box-shadow 1s 3s linear;
+.transition .card {
+    transition: opacity 1s ease-out, border-color 2s steps(3), filter 1s 2s,
+        box-shadow 1s 3s linear;
 }
-.transition .card:hover{
-    opacity: .75;
+.transition .card:hover {
+    opacity: 0.75;
     border-color: var(--card);
-    filter: blur(.15rem);
-    box-shadow: 1rem 1rem 2rem .5rem #000;
+    filter: blur(0.15rem);
+    box-shadow: 1rem 1rem 2rem 0.5rem #000;
 }
-.transition .card img{
-    transition: .5s;
+.transition .card img {
+    transition: 0.5s;
 }
-.transition .card img:hover{
-    object-position:100% 50% ;
+.transition .card img:hover {
+    object-position: 100% 50%;
+}
+.transform-2d img {
+    /*transform-origin: left bottom;*/
+    transition: 0.5s;
+}
+.transform-2d img:hover {
+    transform: translateX(2rem);
+    transform: translateY(4rem);
+    transform: translate(4rem, 5rem);
+    transform: translate(50%, 50%);
+    transform: scale(80%, 80%);
+    transform: scale(1.5, 2);
+    transform: scale(-1, -1);
+    transform: rotateX(45deg);
+    transform: rotateZ(45deg);
+    transform: skew(30deg, 30deg);
+    /*matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )*/
+    transform: matrix(0.5, 0.1, 0.1, 0.5, 2, 2);
+    transform: rotateZ(45deg) scale(0.5, 0.5) translate(100%);
 }
