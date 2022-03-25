@@ -175,3 +175,44 @@ Transiciones
 .flip-back{
     transform: rotateY(180deg);
 }
+@keyframes myAnimation{
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+.my-animation{
+    /*animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    /*cubic-bezier.com*/
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-direction:normal;
+    animation-fill-mode:none;
+    animation-fill-mode:forwards;
+    animation-fill-mode:backwards;
+    animation-fill-mode:both;
+    animation-play-state:running;
+    animation-play-state:paused;
+    animation: myAnimation .5s ease 2ms  infinite alternate both;
+    animation: myAnimation .5s 5 alternate both;
+}
+.my-animation-2{
+    animation: anim 2s both;
+}
+@keyframes anim{
+    0%, 100%{
+        transform: translate(-100%);
+    }
+    50%{
+        transform: translate(100%);
+    }
+}
