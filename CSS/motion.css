@@ -240,18 +240,87 @@ Transiciones
     background-color: var(--card);
     transition: 500ms;
 }
-.anim-bottom:hover::after{
+.anim-bottom:hover::after {
     width: 100%;
 }
-.to-left::after{
+.to-left::after {
     left: 0;
 }
-.to-center::after{
+.to-center::after {
     left: 50%;
 }
-.to-center:hover::after{
+.to-center:hover::after {
     left: 0;
 }
-.to-right::after{
+.to-right::after {
     right: 0%;
+}
+.anim-bg-gradient {
+    background-image: linear-gradient(
+        to right,
+        var(--card) 10%,
+        var(--primary) 30% 70%,
+        var(--card) 90%
+    );
+    background-size: 300% 100%;
+    transition: 0.5s;
+}
+.anim-bg-gradient:hover {
+    background-position: 100% 0;
+}
+.tabs-menu {
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--primary);
+    /*padding: 1rem;*/
+    border-radius: 1rem;
+    width: 70%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem #00000032,
+        inset 0.3rem 0.3rem 0.5rem 0.01rem #00000032;
+}
+.tabs-menu input[type="radio"] {
+    display: none;
+}
+.tabs-menu label {
+    position: relative;
+    z-index: 1;
+    width: calc(100% / 4 - 0.5rem);
+    text-align: center;
+    cursor: pointer;
+}
+.tabs-menu label:hover {
+    color: var(--card);
+}
+.tabs-menu input[type="radio"]:checked + label {
+    color: var(--card);
+}
+.tab-bg-hover {
+    position: absolute;
+    width: calc(100% / 4);
+    height: 3rem;
+    background-image: linear-gradient(
+        45deg,
+        #ffffff55 35%,
+        transparent,
+        #ffffff32 65%
+    );
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    transition: 300ms ease-in-out;
+}
+#tab-1:checked ~ .tab-bg-hover {
+    transform: translateX(0);
+}
+#tab-2:checked ~ .tab-bg-hover {
+    transform: translateX(100%);
+}
+#tab-3:checked ~ .tab-bg-hover {
+    transform: translateX(200%);
+}
+#tab-4:checked ~ .tab-bg-hover {
+    transform: translateX(300%);
 }
