@@ -387,7 +387,7 @@ Transiciones
     transform: translate(150%, 150%);
     transition: transform 500ms ease-in-out;
 }
-.off-canvas-btn:checked ~ .off-canvas-menu{
+.off-canvas-btn:checked ~ .off-canvas-menu {
     transform: translate(0, 0);
 }
 .off-canvas-menu-container {
@@ -407,13 +407,13 @@ Transiciones
     border-bottom: thin solid #000;
     transition: background-color 300ms;
 }
-.off-canvas-link:first-child{
+.off-canvas-link:first-child {
     border-top: thin solid #000;
 }
-.off-canvas-link:hover{
+.off-canvas-link:hover {
     background-color: var(--card);
 }
-.modal{
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -428,11 +428,11 @@ Transiciones
     pointer-events: none;
     transition: opacity 500ms ease-in-out;
 }
-.modal:target{
+.modal:target {
     opacity: 1;
     pointer-events: auto;
 }
-.modal-container{
+.modal-container {
     position: relative;
     border: thick double var(--title);
     border-radius: 1rem;
@@ -445,7 +445,7 @@ Transiciones
     text-align: left;
     overflow: hidden;
 }
-.modal-close{
+.modal-close {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -461,7 +461,40 @@ Transiciones
     text-decoration: none;
     transition: background-color 300ms linear, transform 300msease-in-out;
 }
-.modal-close:hover{
+.modal-close:hover {
     background-color: #a00;
     transform: scale(1.2);
+}
+@keyframes introStarWars {
+    0% {
+        transform: perspective(100vh) rotateX(15deg) translateY(50%);
+    }
+    100% {
+        transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+    }
+}
+.star-wars {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #ffb13a;
+    background-image: url(../assets/stars.gif);
+}
+.star-wars h3,
+.star-wars h2 {
+    color: #ffb13a;
+    font-size: 5vw;
+    text-align: center;
+}
+.star-wars-container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    animation: introStarWars 40s linear infinite;
+}
+.star-wars p{
+    font-size: 5vw;
+    line-height: 4rem;
 }
