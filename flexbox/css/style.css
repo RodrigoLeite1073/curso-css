@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+:root {
+    --card: #141059;
+    --primary: #fb5655;
+    --title: #f87261;
+    --bg: #FFF;
+    --text:#f49255;
+    --text-card: #ccc5ba;
+}
+body{
+    background-color: var(--bg);
+    color:var(--text);
+    font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+    color: var(--title);
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    background-color: var(--card);
+    color:var(--text-card);
+    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    height: 30vh;
+}
+.items{
+    border: thin solid var(--text-card);
+    background-color: var(--primary);
+    color:var(--card);
+    height: 20%;
+    width: 20%;
+}
