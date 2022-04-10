@@ -1,8 +1,15 @@
 *,
 *::before,
-  *::after{
-    box-sizing: border-box;
-  }
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 :root {
   font-family: Rubik, sans-serif;
   --title: #fffcf2;
@@ -11,13 +18,41 @@
   --card: #252422;
   --primary: #eb5e28;
   background-color: var(--bg);
-  color:var(--text);
+  color: var(--text);
 }
-h1{
-  font-size: 3rem;
-  color:var(--title);
-  background-color: var(--card);
-  padding: 1px;
+h1 {
+  color: var(--title);
   text-align: center;
-  border:medium solid var(--primary);
+}
+main {
+  flex: 1;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu a {
+  color:var(--text);
+  text-decoration: none;
+}
+@media (min-width: 720px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu ul {
+    display: flex;
+  }
+}
+.titulares {
+  background-color: var(--card);
+  padding: 1rem;
+  border: medium solid var(--primary);
+  border-radius: 1.5rem;
 }
