@@ -13,6 +13,7 @@ body {
 :root {
   font-family: Rubik, sans-serif;
   --title: #fffcf2;
+  --title-alpha: #fffcf280;
   --text: #ccc5b9;
   --bg: #403d39;
   --card: #252422;
@@ -32,6 +33,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  top: 0;
 }
 .menu ul {
   list-style-type: none;
@@ -59,7 +61,7 @@ main {
   font-size: 10vw;
   text-shadow: 0.3rem 0.3rem 1rem #000000cc;
   flex: 4 0 auto;
-  line-height: 50vh;
+  color: var(--title-alpha);
 }
 .flex-container {
   display: flex;
@@ -76,6 +78,16 @@ main {
   box-shadow: 0.3rem 0.3rem 0.5rem #000b;
   margin: 0.5rem;
 }
+.flex-responsive {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-responsive-item {
+  flex: 1 1 200px;
+  font-size: 1rem;
+  border: thin solid var(--primary);
+  background-color: var(--card);
+}
 @media (min-width: 720px) {
   .header {
     display: flex;
@@ -91,7 +103,7 @@ main {
   .flex-container {
     display: flex;
     flex-flow: row wrap;
-    align-items: start;
+    align-items: center;
   }
   .flex-item {
     flex: 0 0 50%;
