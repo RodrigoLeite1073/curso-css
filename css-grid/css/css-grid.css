@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  --title: #e71d36;
+  --title-alpha: #e71d3680;
+  --text: #111627;
+  --bg: #e0e0e0;
+  --card: #2ec4b6;
+  --primary: #ff9f1c;
+  background-color: var(--bg);
+  color: var(--text);
+}
+h1{
+  color:var(--title);
+  text-align: center;
+}
+a[href="#top"] {
+  margin: 1rem 46%;
+  padding: .2rem;
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary);
+  border-radius: .5rem;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  color:var(--title);
+  margin-top: 50vh;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  margin-bottom: 100vh;
+  font-size: 125%;
+}
+
+.menu li {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  height: 80vh;
+  background-color: var(--card);
+  border: medium solid var(--primary);
+}
+
+.item {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: var(--card);
+  border: medium solid var(--primary);
+}
