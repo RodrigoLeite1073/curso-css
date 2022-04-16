@@ -63,8 +63,8 @@ img {
 .container {
   margin: 0 auto;
   width: 80%;
-  height: 80vh;
-  background-color: var(--card);
+  height: 90vh;
+  background-color: var(--title);
   border: medium solid var(--primary);
 }
 
@@ -73,4 +73,19 @@ img {
   font-size: 1.25rem;
   background-color: var(--card);
   border: medium solid var(--primary);
+}
+.grid-explicit{
+  display: grid;
+  grid-template-rows: 2rem 20vh 30%;
+  grid-template-columns: 50% 100px 1fr;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns:20% repeat(2, 30%) 20%;
+  grid-template-rows: repeat(5, auto);
+  gap:10px 10px;
+  gap:1vh 1vw;
+  gap:0;
 }
