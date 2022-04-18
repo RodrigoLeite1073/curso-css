@@ -148,3 +148,9 @@ img {
 .footer {
   grid-area: footer;
 }
+.grid-implicit {
+  display: inline-grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+}
