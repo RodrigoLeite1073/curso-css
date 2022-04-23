@@ -206,3 +206,29 @@ img {
   grid-row: 2/4;
   grid-column: 2/4;
 }
+.grid-order {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-order .item:nth-child(1) {
+  order: 1;
+}
+.grid-order .item:nth-child(3) {
+  order: 2;
+}
+.grid-align {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: stretch;
+  justify-items: center;
+  justify-items: start;
+  justify-items:save left;
+  align-items: stretch;
+  align-items: center;
+}
+.grid-align .item:nth-child(3){
+  justify-self: stretch;
+  align-self: stretch;
+}
