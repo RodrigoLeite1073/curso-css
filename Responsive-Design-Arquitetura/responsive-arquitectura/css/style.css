@@ -6,3 +6,7 @@
   width: 300px;
   height: 300px;
 }
+.box-flexible{
+  width: 50%;
+  height: 20vh;
+}
