@@ -70,3 +70,40 @@ iframe {
 .aspect-ratio-1-1 {
   aspect-ratio: 1/1;
 }
+@media print {
+  @page {
+    size: A5 landscape;
+  }
+  body {
+    font-size: 10pt;
+    font-family: sans-serif;
+    background-color: #aaa;
+    color: #f00;
+  }
+}
+@media secreen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+@media (prefers-color-scheme:dark) {
+  body {
+    background-color: #222;
+    color: #f50;
+  }
+  a{
+    color:#6f9;
+  }
+}
+/*mobile first*/
+@media screen and (min-width:480px){
+  html{
+    background-color: #faa;
+  }
+}
+/*descktop first*/
+@media screen and (max-width:1024px){
+  html{
+    background-color: #fff;
+  }
+}
