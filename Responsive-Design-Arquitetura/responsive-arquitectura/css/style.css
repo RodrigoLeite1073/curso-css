@@ -86,24 +86,49 @@ iframe {
     scroll-behavior: auto;
   }
 }
-@media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: #222;
     color: #f50;
   }
-  a{
-    color:#6f9;
+  a {
+    color: #6f9;
   }
 }
 /*mobile first*/
-@media screen and (min-width:480px){
-  html{
+@media screen and (min-width: 480px) {
+  html {
     background-color: #faa;
   }
 }
 /*descktop first*/
-@media screen and (max-width:1024px){
-  html{
+@media screen and (max-width: 1024px) {
+  html {
     background-color: #fff;
+  }
+}
+@supports (grid-template-columns: subgrid) {
+  html {
+    background-color: #0f7;
+  }
+}
+.card{
+  border: thin solid #f50;
+  margin: 0 auto;
+  max-width: 800px;
+  contain: layout inline-size style;
+}
+.card-image{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+.card-content{
+  padding: 1rem;
+}
+@container (min-width: 600px){
+  .card-container{
+    display: flex;
   }
 }
