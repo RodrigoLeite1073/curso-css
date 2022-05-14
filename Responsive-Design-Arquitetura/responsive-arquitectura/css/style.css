@@ -132,3 +132,11 @@ iframe {
     display: flex;
   }
 }
+.fluid-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+.fluid-item{
+  background-color: #999;
+  border: 1em double #000;
+}
